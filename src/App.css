@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+.lab-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-weight: bold;
+}
+.nav-links li {
+  cursor: pointer;
+}
+.toggle {
+  width: 40px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  position: relative;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: black;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
+}
+.main-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.description {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+}
+.aslab-gallery {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  margin-top: 20px;
+}
+.aslab-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.aslab-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aslab-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.aslab-role {
+  font-size: 0.9rem;
+  color: #ccc;
 }
